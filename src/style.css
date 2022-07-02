@@ -1,3 +1,22 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #878787;
+  margin-bottom: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .container {
   max-width: 600px;
   margin: 30px auto;
@@ -8,12 +27,4 @@
 .row {
   padding: 10px;
   margin: auto;
-}
-
-footer {
-  text-align: center;
-}
-
-ul {
-  list-style: none;
 }
