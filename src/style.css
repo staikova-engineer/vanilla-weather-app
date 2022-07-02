@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: #878787;
 }
 
 h1 {
@@ -27,4 +28,8 @@ ul {
 .row {
   padding: 10px;
   margin: auto;
+}
+
+#number {
+  font-size: 36px;
 }
