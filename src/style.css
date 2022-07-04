@@ -23,7 +23,15 @@ body {
 
 .units {
   position: relative;
-  top: -14px;
+  top: -10px;
+}
+
+.col {
+  align-self: center;
+}
+
+img {
+  width: 70px;
 }
 
 ul {
@@ -36,10 +44,10 @@ li {
 }
 
 strong {
-  vertical-align: bottom;
   font-size: 58px;
   line-height: 1;
   font-weight: 400;
+  vertical-align: bottom;
 }
 
 footer {
