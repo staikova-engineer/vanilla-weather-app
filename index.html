@@ -10,6 +10,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>W7 Weather App</title>
   </head>
@@ -32,17 +33,16 @@
           <div class="col">
             <div class="temp-char">
               <ul>
-                <li>Wind</li>
-                <li>Humidity</li>
-                <li>Precipitation</li>
+                <li>Wind: <span class="wind"></span> km/h</li>
+                <li>Humidity: <span class="humidity"></span>%</li>
               </ul>
             </div>
           </div>
           <div class="col">
             <div class="city-desc">
-              <div>City</div>
-              <div>Date time</div>
-              <div>Decsription</div>
+              <div class="city">City</div>
+              <div class="date-time">Date time</div>
+              <div class="desc">Decsription</div>
             </div>
           </div>
         </div>
