@@ -30,6 +30,10 @@ body {
   align-self: center;
 }
 
+.form-search {
+  margin: 0;
+}
+
 img {
   width: 70px;
 }
