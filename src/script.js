@@ -33,8 +33,10 @@ function showTemp(response) {
   let dateElement = document.querySelector(".date-time");
   let iconElement = document.querySelector(".icon");
 
+  celsiusTemp = response.data.main.temp;
+
   cityElement.innerHTML = response.data.name;
-  tempElement.innerHTML = Math.round(response.data.main.temp);
+  tempElement.innerHTML = Math.round(celsiusTemp);
   descriptionElement.innerHTML = response.data.weather[0].main;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
@@ -45,6 +47,31 @@ function showTemp(response) {
   );
   iconElement.setAttribute("alt", `response.data.weather[0].main`);
 }
+
+function displayFahrenTemp(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector(".number");
+  celsiusLink.classList.remove("active");
+  fahrenLink.classList.add("active");
+  let fahrenTemp = (celsiusTemp * 9) / 5 + 32;
+  tempElement.innerHTML = Math.round(fahrenTemp);
+}
+
+function displayCelsTemp(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector(".number");
+  fahrenLink.classList.remove("active");
+  celsiusLink.classList.add("active");
+  tempElement.innerHTML = Math.round(celsiusTemp);
+}
+
+let celsiusTemp = null;
+
+let fahrenLink = document.querySelector(".fahrenheit");
+fahrenLink.addEventListener("click", displayFahrenTemp);
+
+let celsiusLink = document.querySelector(".celsius");
+celsiusLink.addEventListener("click", displayCelsTemp);
 
 function search(city) {
   let apiKey = `f37ae7e0407a8ea1d736a1fcc1e6133a`;
