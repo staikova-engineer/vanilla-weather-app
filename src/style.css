@@ -34,6 +34,10 @@ body {
   margin: 0;
 }
 
+.search-button {
+  padding: 0;
+}
+
 img {
   width: 70px;
 }
