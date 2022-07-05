@@ -1,46 +1,8 @@
 body {
   font-family: "Courier New", Courier, monospace;
 }
-.container {
-  padding: 20px;
-  margin: 0 auto;
-  line-height: 1.5;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
 
-.wrapper {
-  display: block;
-  margin: 0 auto;
-  border: 1px solid #dadde1;
-  max-width: 700px;
-  padding: 15px;
-}
-
-.city-desc {
-  text-align: right;
-}
-
-.units {
-  position: relative;
-  top: -10px;
-}
-
-.col {
-  align-self: center;
-}
-
-.form-search {
-  margin: 0;
-}
-
-.search-button {
-  padding: 0;
-}
-
-.temp-number .active {
-  color: #000;
-  cursor: default;
+a {
   text-decoration: none;
 }
 
@@ -67,4 +29,43 @@ strong {
 footer {
   text-align: center;
   font-size: 12px;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #dadde1;
+  max-width: 700px;
+  padding: 15px;
+}
+
+.city-desc {
+  text-align: right;
+}
+
+.units {
+  position: relative;
+  top: -10px;
+}
+
+.form-search {
+  margin: 0;
+}
+
+.search-button {
+  padding: 0;
+}
+
+.temp-number .active {
+  color: #000;
+  cursor: default;
+  text-decoration: none;
 }

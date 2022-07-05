@@ -18,7 +18,7 @@
     <div class="container">
       <div class="wrapper">
         <form class="search-form">
-          <div class="row form-search">
+          <div class="row form-search mb-3">
             <div class="col-9">
               <input
                 type="search"
@@ -37,12 +37,11 @@
             </div>
           </div>
         </form>
-        <div class="row">
-          <div class="col-md-auto">
+        <div class="row align-items-center">
+          <div class="col">
             <div class="temp-number">
-              <img src="#" alt="#" class="icon" />
-              <span>
-                <strong class="number"></strong
+              <img src="#" alt="#" class="icon" /><span
+                ><strong class="number"></strong
                 ><small class="units"
                   ><a href="#" class="celsius active">ºC</a> |
                   <a href="#" class="fahrenheit">ºF</a></small
@@ -50,16 +49,18 @@
               </span>
             </div>
           </div>
-          <div class="col temp-char">
-            <ul>
-              <li>Wind: <span class="wind"></span> km/h</li>
-              <li>Humidity: <span class="humidity"></span>%</li>
-            </ul>
+          <div class="col">
+            <div class="temp-char">
+              <ul>
+                <li>Wind: <span class="wind"></span> km/h</li>
+                <li>Humidity: <span class="humidity"></span>%</li>
+              </ul>
+            </div>
           </div>
-          <div class="col-md-auto">
+          <div class="col">
             <div class="city-desc">
               <div class="city"></div>
-              <div>Last updated: <span class="date-time"></span></div>
+              <div>For <span class="date-time"></span></div>
               <div class="desc"></div>
             </div>
           </div>
