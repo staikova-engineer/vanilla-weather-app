@@ -58,5 +58,7 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+search("Tallinn");
+
 let form = document.querySelector(".search-form");
 form.addEventListener("submit", handleSubmit);
