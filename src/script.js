@@ -46,8 +46,17 @@ function showTemp(response) {
   iconElement.setAttribute("alt", `response.data.weather[0].main`);
 }
 
-let apiKey = `f37ae7e0407a8ea1d736a1fcc1e6133a`;
-let city = `oslo`;
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = `f37ae7e0407a8ea1d736a1fcc1e6133a`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showTemp);
+}
 
-axios.get(apiUrl).then(showTemp);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+let form = document.querySelector(".search-form");
+form.addEventListener("submit", handleSubmit);
